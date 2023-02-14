@@ -23,5 +23,20 @@ var_vec_character
 vec_combine <- c(var_vec_numeric, c(1,4,5),8)
 vec_combine
 
-set.seed(123)
 
+
+set.seed(1234)
+vec_random2 <- round(runif(20,-6,3))
+vec_random2
+
+
+func_name <-function(param1,param2){
+  return (param1 + param2)
+}
+
+func_name(1,5)
+
+
+for(iter in c("1", "2")){
+  print(iter)
+}
