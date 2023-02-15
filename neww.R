@@ -1,42 +1,43 @@
-print("smth")
-cat("cat")
-
-var_num_1 <-  56
-
-
-
-15+6*sin(32)+exp(1i*6)
-
-
-is.logical(NaN)
-
-is.numeric(12)
-
-is.character('efl;')
-
-var_vec_bool <- logical(15)
-var_vec_bool
-var_vec_numeric <- numeric(10)
-var_vec_numeric
-var_vec_character <- character(8)
-var_vec_character
-vec_combine <- c(var_vec_numeric, c(1,4,5),8)
-vec_combine
-
-
-
-set.seed(1234)
-vec_random2 <- round(runif(20,-6,3))
-vec_random2
-
-
-func_name <-function(param1,param2){
-  return (param1 + param2)
+first_task = function(param1,param2){
+  x <- param1
+  y <- param2
+  print(' - - - -')
+  z <- y
+  y <- x
+  x <- z
+  print(x)
+  print(y)
 }
+first_task(2,4)
 
-func_name(1,5)
-
-
-for(iter in c("1", "2")){
-  print(iter)
+second_task = function(x,y,z,h){
+  print(class(x))
+  print(class(y))
+  print(class(z))
+  print(class(h))
+  h = numeric(h)
+  y = integer(y)
+  x = character(x)
 }
+second_task(3.5,"2,6",1.78,TRUE)
+
+third_task = function(dohod){
+  dohod = log(dohod)
+  print(dohod)
+}
+third_task(1573)
+
+
+
+fourth_task = function(file){
+  table1 <-
+    readLines(con = file,
+              n = 1, encoding =
+                'UTF-8')
+  x = as.numeric(table1)
+  print(x*2-1)
+}
+fourth_task("/Users/dubrovskijvladislav/Documents/GitHub/R_projects/EnoT1K4/new.txt")
+
+
+
